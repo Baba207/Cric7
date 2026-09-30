@@ -449,7 +449,7 @@ def get_large_scoreboard_text():
     
     s_runs = to_serif_bold_num(match['runs'])
     s_wkts = to_serif_bold_num(match['wickets'])
-    s_overs = to_serif_bold_num(f"{match['overs']:.1f}")
+    s_overs = to_serif_bold_num(str(match['overs'])))
     s_crr = to_serif_bold_num(f"{crr:.2f}")
     
     team_name = clean_txt(match['batting_team'])[:14].upper()
